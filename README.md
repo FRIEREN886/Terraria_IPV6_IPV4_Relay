@@ -1,5 +1,7 @@
 # Terraria IPv6 Relay
 
+客户端下载链接：https://pan.quark.cn/s/22c568644a4a?pwd=rhGD
+
 一个面向 Terraria TCP 联机的轻量 IPv6 中继。Ubuntu 服务端固定连接到指定的 Terraria 服务器，Windows 客户端在本机提供 `127.0.0.1:7777` 入口。
 
 ```text
