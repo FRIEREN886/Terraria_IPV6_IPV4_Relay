@@ -1,0 +1,19 @@
+[Unit]
+Description=Terraria IPv6 Relay
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=terraria-relay
+Group=terraria-relay
+ExecStart=/opt/terraria-relay/TerrariaRelay.Server --config /etc/terraria-relay.ini
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
